@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gopal's Craiglist</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="NewCraiglist.css">
+	<script>
+		function loginFunc(){
+			var userID = prompt("Enter UserID:","");
+			var password = prompt("Enter password","");
+			document.getElementById("greeting").innerHTML = "Hello "+ userID;
+		}
+		
+		function signupFunc(){
+			var userID = prompt("Set UserID:","");
+			var password = prompt("Set password","");
+			loginFunc();
+		}
+		
+	</script>
+  </head>
+
+  <body style="background-color: #DADADA">
+    <header class="opening">
+      <nav class="top-nav">
+        <ul  style="list-style-type: none; margin: 0; padding: 10px;">
+          <li style="display: inline; float: left; padding-left: 10px;"><a href="NewCraiglist.html"><img style="width:120px; height:40px" src = "E:\books\Internet and Web Systems\download.png"></img></a></li>
+          <li style="display: inline; float: left; padding-left: 0px; padding: 9.5px;">
+            <select style="height: 21px;">
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Chennai">Chennai</option>
+            </select>
+         </li>
+         <li style="display: inline; float: left; padding-left: 0px; padding: 10px;"><input type="text" id="search" placeholder = "Search"></input></li>
+         <li style="float: right; display: inline; padding-left: 20px; padding: 10px;"><a href="#" class="topLink">Post to Classifieds</a></li>
+         <li id="signup" style="float: right; display: inline; padding-left: 20px; padding: 10px;" onclick="signupFunc()"><a href="#" class="topLink">Sign Up</a></li>
+         <li id="login" style="float: right; display: inline; padding-left: 20px; padding: 10px;" onclick="loginFunc()"><a href="#" class="topLink">Login</a></li>
+		 <li id="greeting" style="float: right; display: inline; padding-left: 20px; padding: 10px;"></li>
+      </ul>
+      </nav>
+    </header>
+    <section class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="E:\books\Internet and Web Systems\imgA.jpg" class="slideImages">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="E:\books\Internet and Web Systems\imgB.jpg" class="slideImages">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="E:\books\Internet and Web Systems\imgC.jpg" class="slideImages">
+        </div>
+
+    </section>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+    <br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<hr noshade>
+	<br>
+    <section class="main-content">
+      <img src="E:\books\Internet and Web Systems\community.jpg" class="listImage" style="float: left">
+	  <ul style="list-style-type:disc; float: right; padding-left: 80px; padding-right: 300px">
+		<li><a href="#" class="listLinks">Activities</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+	  <ul style="list-style-type:disc; float: right; padding-left: 100px">
+		<li><a href="#" class="listLinks">Local News</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+    </section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br>
+	<hr noshade>
+	<br>
+	<section class="main-content">
+      <img src="E:\books\Internet and Web Systems\personals.jpg" class="listImage" style="float:right">
+	  <ul style="list-style-type:disc; float:left; padding-left: 80px;">
+		<li><a href="#" class="listLinks">Activities</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+	  <ul style="list-style-type:disc; float:left; padding-left: 100px">
+		<li><a href="#" class="listLinks">Local News</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+    </section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br>
+	<hr noshade>
+	<br>
+    <section class="main-content">
+      <img src="E:\books\Internet and Web Systems\service.jpg" class="listImage" style="float: left">
+	  <ul style="list-style-type:disc; float: right; padding-left: 80px; padding-right: 300px">
+		<li><a href="#" class="listLinks">Activities</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+	  <ul style="list-style-type:disc; float: right; padding-left: 100px">
+		<li><a href="#" class="listLinks">Local News</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+    </section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br>
+	<hr noshade>
+	<br>
+	<section class="main-content">
+      <img src="E:\books\Internet and Web Systems\housing.jpg" class="listImage" style="float:right">
+	  <ul style="list-style-type:disc; float:left; padding-left: 80px;">
+		<li><a href="#" class="listLinks">Activities</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+	  <ul style="list-style-type:disc; float:left; padding-left: 100px">
+		<li><a href="#" class="listLinks">Local News</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+    </section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br>
+	<hr noshade>
+	<br>
+    <section class="main-content">
+      <img src="E:\books\Internet and Web Systems\sale.jpg" class="listImage" style="float: left">
+	  <ul style="list-style-type:disc; float: right; padding-left: 80px; padding-right: 300px">
+		<li><a href="#" class="listLinks">Activities</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+	  <ul style="list-style-type:disc; float: right; padding-left: 100px">
+		<li><a href="#" class="listLinks">Local News</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+    </section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br>
+	<hr noshade>
+	<br>
+	<section class="main-content">
+      <img src="E:\books\Internet and Web Systems\jobs.png" class="listImage" style="float:right">
+	  <ul style="list-style-type:disc; float:left; padding-left: 80px;">
+		<li><a href="#" class="listLinks">Activities</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+	  <ul style="list-style-type:disc; float:left; padding-left: 100px">
+		<li><a href="#" class="listLinks">Local News</a></li>
+		<li><a href="#" class="listLinks">Artists</a></li>
+		<li><a href="#" class="listLinks">Childcare</a></li>
+		<li><a href="#" class="listLinks">Classes</a></li>
+		<li><a href="#" class="listLinks">Events</a></li>
+	  </ul>
+    </section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br>
+	<hr noshade>
+	<footer>
+		<p>@Gopal's Craiglist&nbsp;&nbsp;&nbsp;<a href="https://www.craigslist.org/about/help/"><i>Help</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.craigslist.org/about/scams"><i>Safety</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.craigslist.org/about/privacy.policy"><i>Privacy</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://forums.craigslist.org/?forumID=8"><i>Feedback</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.craigslist.org/about/craigslist_is_hiring"><i>Hiring</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.craigslist.org/about/terms.of.use.en"><i>Terms</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.craigslist.org/about/"><i>About</i></a></p>
+	</footer>
+</body>
+</html>    
